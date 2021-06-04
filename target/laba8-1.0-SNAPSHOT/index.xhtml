@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:body>
+    <h:form>
+        <h:outputText>Enter numbers:</h:outputText><br/>
+        <h:inputText id="num" validator="valid" value="#{Number.numbers}">
+            <f:validator for="num" validatorId="valid"/>
+        </h:inputText>
+        <h:message for="num" errorStyle="color: orange"/>
+        <h:selectOneRadio value="#{Number.command}">
+            <f:selectItem itemValue="ASC" itemLabel="ASC" />
+            <f:selectItem itemValue="DESC" itemLabel="DESC"/>
+        </h:selectOneRadio>
+        <h:commandButton action="#{numbersSorter.sort()}" value="Sort"/>
+    </h:form>
+</h:body>
+</html>

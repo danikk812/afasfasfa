@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="PISM_sem2_laba8_Kazarezov:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>PISM_sem2_laba8_Kazarezov</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="PISM_sem2_laba8_Kazarezov-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="PISM_sem2_laba8_Kazarezov:war exploded" />
+    </root>
+  </artifact>
+</component>
