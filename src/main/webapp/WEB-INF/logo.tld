@@ -1,0 +1,31 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" version="2.0">
+    <tlib-version>1.0</tlib-version>
+    <short-name>natasha</short-name>
+    <uri>/WEB-INF/logo.tld</uri>
+    
+    <tag>
+        <name>logo</name>
+        <tag-class>lab3.tag.LogoTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>heading</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>image</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>width</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>height</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+</taglib>

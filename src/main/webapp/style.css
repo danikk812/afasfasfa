@@ -1,0 +1,16 @@
+body {
+    background: #deb887;
+    height: 100vh;
+}
+
+div.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+img {
+    align-items: center;
+}
